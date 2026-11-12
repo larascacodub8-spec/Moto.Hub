@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 .header {
@@ -73,7 +74,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .badge {
@@ -100,7 +101,7 @@ a {
 
 .hero-image img {
     max-width: 100%;
-    width: 600px;
+    width: 900px;
     height: auto;
 }
 
@@ -110,7 +111,7 @@ a {
     font-size: 50px;
     font-weight: 800;
     color: #fff;
-    background: linear-gradient(135deg, #9333ea -30%, #f21c87 100%);
+    background: linear-gradient(135deg, #7d08ea -30%, #ea2283 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 20px rgba(236, 72, 153, 0.5));
@@ -177,8 +178,7 @@ body::after {
     border-radius: 50%;
     filter: blur(90px);
     opacity: 0.6;
-    z-index: -999;
-    pointer-events: none;
+
 }
 
 body::before {
