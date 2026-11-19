@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
-
+@import "courses.css";
 
 * {
     margin: 0;
@@ -178,7 +178,7 @@ body::after {
     border-radius: 50%;
     filter: blur(90px);
     opacity: 0.6;
-
+    z-index: -999;
 }
 
 body::before {
@@ -225,4 +225,78 @@ body::after {
     100% {
         transform: translate(80px, -120px) scale(0.95);
     }
+}
+
+.features-banner-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.features-banner-wrapper h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner-glow {
+    position: absolute;
+    bottom: 5px;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 0, 122, 0.35) 0%, rgba(121, 40, 202, 0.2) 70%, transparent 100%);
+    filter: blur(40px);
+    border-radius: 50%;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: #0f0e17;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 122, 0.15);
+}
+
+.feature-card h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.features-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
 }
